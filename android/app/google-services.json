@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "436333863636",
+    "project_id": "ibadah-tracker",
+    "storage_bucket": "ibadah-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436333863636:android:3946e4adc25bf38ff81141",
+        "android_client_info": {
+          "package_name": "com.cahayapath.ibadah_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436333863636-muis3g51g5gajn8logshpfc9jp41gorp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cahayapath.ibadah_tracker",
+            "certificate_hash": "962a05fd89514644eb7decbdadccac7de5e28998"
+          }
+        },
+        {
+          "client_id": "436333863636-6mor12sffqfj8jfse6gsc1j7p9pnkfpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3-Ghk5q6UQgi8wE3agp8p8n7FngCPDxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436333863636-6mor12sffqfj8jfse6gsc1j7p9pnkfpf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
