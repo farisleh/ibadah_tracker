@@ -1,5 +1,5 @@
 import 'dart:convert' show Encoding, json, jsonDecode;
-// import 'package:analog_clock/analog_clock.dart';
+import 'package:analog_clock/analog_clock.dart';
 import 'package:ibadah_tracker/add_ibadah.dart';
 import 'package:ibadah_tracker/model/adhan.dart';
 import 'package:ibadah_tracker/model/user.dart';
@@ -78,26 +78,26 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         height: MediaQuery.of(context).size.height / 3.5,
                         child: Stack(children: <Widget>[
-                          // Align(
-                          //   alignment: Alignment(-0.94, -0.3),
-                          //   child: Container(
-                          //       height: 110.0,
-                          //       width: 120.0,
-                          //       child: AnalogClock(
-                          //         isLive: true,
-                          //         hourHandColor: Colors.black,
-                          //         minuteHandColor: Colors.black,
-                          //         showSecondHand: true,
-                          //         numberColor: Colors.transparent,
-                          //         tickColor: Colors.white,
-                          //         showNumbers: true,
-                          //         textScaleFactor: 2.4,
-                          //         showTicks: true,
-                          //         showDigitalClock: true,
-                          //         digitalClockColor: Colors.white,
-                          //         datetime: DateTime.now(),
-                          //       )),
-                          // ),
+                          Align(
+                            alignment: Alignment(-0.94, -0.3),
+                            child: Container(
+                                height: 110.0,
+                                width: 120.0,
+                                child: AnalogClock(
+                                  isLive: true,
+                                  hourHandColor: Colors.black,
+                                  minuteHandColor: Colors.black,
+                                  showSecondHand: true,
+                                  numberColor: Colors.transparent,
+                                  tickColor: Colors.white,
+                                  showNumbers: true,
+                                  textScaleFactor: 2.4,
+                                  showTicks: true,
+                                  showDigitalClock: true,
+                                  digitalClockColor: Colors.white,
+                                  datetime: DateTime.now(),
+                                )),
+                          ),
                           Align(
                               alignment: Alignment(-0.84, 0.55),
                               child: Container(
