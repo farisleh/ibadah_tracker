@@ -14,6 +14,19 @@ class DailyView extends StatefulWidget {
 
 class _DailyViewState extends State<DailyView> {
   List data = [];
+  DateTime selectedDate = DateTime.now();
+
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime picked = await showDatePicker(
+        context: context,
+        initialDate: selectedDate,
+        firstDate: DateTime(2015, 8),
+        lastDate: DateTime(2101));
+    if (picked != null && picked != selectedDate)
+      setState(() {
+        selectedDate = picked;
+      });
+  }
 
   @override
   initState() {
@@ -47,7 +60,7 @@ class _DailyViewState extends State<DailyView> {
                   color: Colors.green[200],
                   elevation: 5,
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () => _selectDate(context),
                     child: Container(
                       height: 70.0,
                       child: Row(

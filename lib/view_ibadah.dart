@@ -202,7 +202,7 @@ class _ViewIbadahState extends State<ViewIbadah> {
                     child: Image(image: AssetImage("images/calendar.png"))),
               ),
               title: const Text("Date created"),
-              subtitle: Text(widget.startDate),
+              subtitle: Text(widget.startDate + "(" + widget.routines + ")"),
             ),
             ListTile(
               leading: Padding(
@@ -325,7 +325,7 @@ class _ViewIbadahState extends State<ViewIbadah> {
 
             new FlatButton(
               child: new Text(
-                "Not Achieve",
+                "Update",
                 style: TextStyle(color: Colors.red),
               ),
               onPressed: () {
@@ -394,6 +394,17 @@ class _ViewIbadahState extends State<ViewIbadah> {
                         gravity: ToastGravity.BOTTOM,
                         timeInSecForIosWeb: 1,
                         backgroundColor: Colors.green,
+                        textColor: Colors.white,
+                        fontSize: 16.0);
+                    return;
+                  }
+                  if (_numbercontroller.text == widget.number) {
+                    Fluttertoast.showToast(
+                        msg: "Please click Achieve.",
+                        toastLength: Toast.LENGTH_SHORT,
+                        gravity: ToastGravity.CENTER,
+                        timeInSecForIosWeb: 1,
+                        backgroundColor: Colors.red,
                         textColor: Colors.white,
                         fontSize: 16.0);
                     return;
